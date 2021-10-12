@@ -13977,36 +13977,38 @@ h3, .h3, .instructions-header {
   color: white;
   box-shadow: none;
   padding-bottom: 0px;
+  width: 400px;
 }
 
-/* line 155, app/assets/stylesheets/application.scss.erb */
+/* line 156, app/assets/stylesheets/application.scss.erb */
 #top-search {
   background-color: #212529;
   border: none;
   color: white;
   box-shadow: none;
   padding-bottom: 0px;
+  width: calc(100% - 30px);
 }
 
-/* line 163, app/assets/stylesheets/application.scss.erb */
+/* line 165, app/assets/stylesheets/application.scss.erb */
 .easy-autocomplete {
   display: inline-block;
 }
 
-/* line 168, app/assets/stylesheets/application.scss.erb */
+/* line 170, app/assets/stylesheets/application.scss.erb */
 body, html {
   height: 100%;
   font-size: 14px;
 }
 
-/* line 174, app/assets/stylesheets/application.scss.erb */
+/* line 176, app/assets/stylesheets/application.scss.erb */
 footer {
   text-align: center;
   background-color: #212529;
   color: white;
 }
 
-/* line 180, app/assets/stylesheets/application.scss.erb */
+/* line 182, app/assets/stylesheets/application.scss.erb */
 .recipe-listing-title {
   font-family: "Satisfy", cursive;
   font-weight: bold;
@@ -14014,7 +14016,7 @@ footer {
   color: #353535;
 }
 
-/* line 187, app/assets/stylesheets/application.scss.erb */
+/* line 189, app/assets/stylesheets/application.scss.erb */
 .recipe-title {
   font-family: "Satisfy", cursive;
   font-weight: bold;
@@ -14022,7 +14024,7 @@ footer {
   margin-top: 0.5rem;
 }
 
-/* line 194, app/assets/stylesheets/application.scss.erb */
+/* line 196, app/assets/stylesheets/application.scss.erb */
 .recipe-ingredient-list {
   /*font-family: "Caveat";*/
   /*font-family: "Satisfy", cursive;*/
@@ -14032,12 +14034,12 @@ footer {
   margin-bottom: 0rem;
 }
 
-/* line 203, app/assets/stylesheets/application.scss.erb */
+/* line 205, app/assets/stylesheets/application.scss.erb */
 ul.dash {
   list-style: none;
 }
 
-/* line 206, app/assets/stylesheets/application.scss.erb */
+/* line 208, app/assets/stylesheets/application.scss.erb */
 ul.dash > li:before {
   display: inline-block;
   content: "-";
@@ -14045,12 +14047,12 @@ ul.dash > li:before {
   margin-left: 1em;
 }
 
-/* line 213, app/assets/stylesheets/application.scss.erb */
+/* line 215, app/assets/stylesheets/application.scss.erb */
 .step-number::after {
   content: ".";
 }
 
-/* line 217, app/assets/stylesheets/application.scss.erb */
+/* line 219, app/assets/stylesheets/application.scss.erb */
 .step-number {
   font-weight: bold;
   margin-top: 4px;
@@ -14068,12 +14070,12 @@ ul.dash > li:before {
   color: white;
   background-color: black;
 }*/
-/* line 235, app/assets/stylesheets/application.scss.erb */
+/* line 237, app/assets/stylesheets/application.scss.erb */
 .recipe-instructions > div {
   margin-bottom: 0.50rem;
 }
 
-/* line 239, app/assets/stylesheets/application.scss.erb */
+/* line 241, app/assets/stylesheets/application.scss.erb */
 .recipe-instructions, #ing_list {
   font-family: 'Raleway', sans-serif;
   /*font-family: 'Dancing Script', cursive;*/
@@ -14084,41 +14086,41 @@ ul.dash > li:before {
   /*padding-right: 20em;*/
 }
 
-/* line 249, app/assets/stylesheets/application.scss.erb */
+/* line 251, app/assets/stylesheets/application.scss.erb */
 .recipe-body {
   width: 800px;
 }
 
-/* line 253, app/assets/stylesheets/application.scss.erb */
+/* line 255, app/assets/stylesheets/application.scss.erb */
 .inline {
   display: inline;
 }
 
-/* line 257, app/assets/stylesheets/application.scss.erb */
+/* line 259, app/assets/stylesheets/application.scss.erb */
 .inline-block {
   display: inline;
 }
 
-/* line 261, app/assets/stylesheets/application.scss.erb */
+/* line 263, app/assets/stylesheets/application.scss.erb */
 .responsive-margins-lg, .responsive-margins-sm {
   height: 100%;
   margin: auto;
   width: 75.75%;
 }
 
-/* line 267, app/assets/stylesheets/application.scss.erb */
+/* line 269, app/assets/stylesheets/application.scss.erb */
 .responsive-margins-50-lg, .responsive-margins-50-sm {
   height: 100%;
   margin: auto;
   width: 50%;
 }
 
-/* line 273, app/assets/stylesheets/application.scss.erb */
+/* line 275, app/assets/stylesheets/application.scss.erb */
 .responsive-side-sm {
   display: inline-block;
 }
 
-/* line 277, app/assets/stylesheets/application.scss.erb */
+/* line 279, app/assets/stylesheets/application.scss.erb */
 .slider-button {
   position: fixed;
   top: 50%;
@@ -14128,75 +14130,84 @@ ul.dash > li:before {
   /*background-color: white;*/
 }
 
-/* line 286, app/assets/stylesheets/application.scss.erb */
+/* line 288, app/assets/stylesheets/application.scss.erb */
 #add_comment_form {
   border: 1px solid black;
   position: absolute;
   background-color: white;
 }
 
-/* line 291, app/assets/stylesheets/application.scss.erb */
+/* line 293, app/assets/stylesheets/application.scss.erb */
 .add_recipe_comment {
   cursor: pointer;
 }
 
-/* line 294, app/assets/stylesheets/application.scss.erb */
+/* line 296, app/assets/stylesheets/application.scss.erb */
 .show_item_source > a, .show_item_source {
   color: #777777;
 }
 
-/* line 297, app/assets/stylesheets/application.scss.erb */
+/* line 299, app/assets/stylesheets/application.scss.erb */
 .show_item_source {
   color: #777777;
   font-size: 0.8em;
 }
 
-/* line 302, app/assets/stylesheets/application.scss.erb */
+/* line 304, app/assets/stylesheets/application.scss.erb */
 .my-tns-control {
   font-size: 1.11rem;
   cursor: pointer;
 }
 
-/* line 307, app/assets/stylesheets/application.scss.erb */
+/* line 309, app/assets/stylesheets/application.scss.erb */
 .ingredient-details {
   color: gray;
   font-style: italic;
 }
 
-/* line 317, app/assets/stylesheets/application.scss.erb */
+/* line 319, app/assets/stylesheets/application.scss.erb */
 .responsive-above {
   display: flex;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 322, app/assets/stylesheets/application.scss.erb */
+  /* line 324, app/assets/stylesheets/application.scss.erb */
   .responsive-margins-lg, .responsive-margins-50-lg {
     width: 100%;
     /* The width is 100%, when the viewport is 800px or smaller */
   }
-  /* line 325, app/assets/stylesheets/application.scss.erb */
+  /* line 327, app/assets/stylesheets/application.scss.erb */
   .recipe-body {
     width: 100%;
   }
-  /* line 328, app/assets/stylesheets/application.scss.erb */
+  /* line 330, app/assets/stylesheets/application.scss.erb */
   body {
     margin-top: 0px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  /* line 334, app/assets/stylesheets/application.scss.erb */
+  /* line 336, app/assets/stylesheets/application.scss.erb */
   .responsive-above {
     display: block;
   }
 }
 
 @media screen and (max-width: 768px) {
-  /* line 340, app/assets/stylesheets/application.scss.erb */
+  /* line 342, app/assets/stylesheets/application.scss.erb */
   .responsive-margins-sm, .responsive-margins-50-sm {
     width: 100%;
     /* The width is 100%, when the viewport is 800px or smaller */
   }
+  /* line 345, app/assets/stylesheets/application.scss.erb */
+  #top-search-container {
+    flex-grow: 1;
+    width: calc(100% - 60px);
+  }
+  /* line 349, app/assets/stylesheets/application.scss.erb */
+  .responsive-xs-width-100 {
+    width: 100%;
+  }
 }
 
-/*# sourceMappingURL=application.css-33e2b3869f04fed41f0cd483660a4a9e4a50ef8d09c80071d5c0743f11316ce5.map */
+/*# sourceMappingURL=application.css-423110d319a8ac0c33b7e1d69859294ac730d8d0205f9f3de185943739fb9ad1.map */

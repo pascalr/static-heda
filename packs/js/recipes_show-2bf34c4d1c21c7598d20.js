@@ -233,9 +233,19 @@ function prettyVolume(ml, is_liquid) {
 }
 
 function prettyIngredient(ing) {
+  var linkSingular = "<a href='/foods/" + ing.dataset.foodId + "'>" + ing.dataset.foodNameSingular + "</a> ";
+
+  if (ing.dataset.raw == null || ing.dataset.raw == "") {
+    return linkSingular;
+  }
+
   var s = parseQuantityFloatAndLabel(ing.dataset.raw);
-  var qty = s[0] * window.scale;
   var unit = unitByName(s[1]);
+  var qty = s[0] * window.scale;
+
+  if (unit) {
+    qty *= unit.value;
+  }
 
   if (unit && unit.is_weight) {
     var r = prettyWeight(qty) + " ";
@@ -256,7 +266,7 @@ function prettyIngredient(ing) {
   if ((!unit || !unit.is_volume && !unit.is_weight) && qty > 1) {
     r += "<a href='/foods/" + ing.dataset.foodId + "'>" + ing.dataset.foodNamePlural + "</a> ";
   } else {
-    r += "<a href='/foods/" + ing.dataset.foodId + "'>" + ing.dataset.foodNameSingular + "</a> ";
+    r += linkSingular;
   }
 
   return r;
@@ -264,6 +274,11 @@ function prettyIngredient(ing) {
 
 function prettyDetailedIngredient(ing) {
   var r = prettyIngredient(ing);
+
+  if (ing.dataset.raw == null || ing.dataset.raw == "") {
+    return r;
+  }
+
   var s = parseQuantityFloatAndLabel(ing.dataset.raw);
   var unit = unitByName(s[1]);
   var grams = ing.dataset.grams * window.scale;
@@ -312,7 +327,11 @@ function parseQuantityFloat(str) {
 }
 
 function parseQuantityFloatAndLabel(raw) {
-  var s = raw.match(/^\d+([,.\/]\d+)?/g);
+  if (!raw) {
+    return null;
+  }
+
+  var s = raw.match(/^\d+( \d)?([,.\/]\d+)?/g);
   var qty_s = s[0];
   var label = raw.substr(qty_s.length).trim(); //console.log("Qty_s: " + qty_s)
   //console.log("Label: " + label)
@@ -327,6 +346,10 @@ function calcScale(inc) {
 }
 
 function scaleRaw(raw) {
+  if (!raw) {
+    return "";
+  }
+
   var s = parseQuantityFloatAndLabel(raw);
   var f = s[0];
   var label = s[1];
@@ -568,4 +591,4 @@ document.addEventListener("DOMContentLoaded", function (event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=recipes_show-650be67cf2b78a88a4ca.js.map
+//# sourceMappingURL=recipes_show-2bf34c4d1c21c7598d20.js.map
