@@ -14188,55 +14188,55 @@ ul.dash > li:before {
   font-style: italic;
 }
 
-/* line 335, app/assets/stylesheets/application.scss.erb */
+/* line 341, app/assets/stylesheets/application.scss.erb */
 .responsive-above {
   display: flex;
 }
 
-/* line 339, app/assets/stylesheets/application.scss.erb */
+/* line 345, app/assets/stylesheets/application.scss.erb */
 .responsive-sm-above {
   display: flex;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 344, app/assets/stylesheets/application.scss.erb */
+  /* line 350, app/assets/stylesheets/application.scss.erb */
   .responsive-margins-lg, .responsive-margins-50-lg {
     width: 100%;
     /* The width is 100%, when the viewport is 800px or smaller */
   }
-  /* line 347, app/assets/stylesheets/application.scss.erb */
+  /* line 353, app/assets/stylesheets/application.scss.erb */
   .recipe-body {
     width: 100%;
   }
-  /* line 350, app/assets/stylesheets/application.scss.erb */
+  /* line 356, app/assets/stylesheets/application.scss.erb */
   body {
     margin-top: 0px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  /* line 356, app/assets/stylesheets/application.scss.erb */
+  /* line 362, app/assets/stylesheets/application.scss.erb */
   .responsive-above {
     display: block;
   }
 }
 
 @media screen and (max-width: 768px) {
-  /* line 362, app/assets/stylesheets/application.scss.erb */
+  /* line 368, app/assets/stylesheets/application.scss.erb */
   .responsive-sm-above {
     display: block;
   }
-  /* line 365, app/assets/stylesheets/application.scss.erb */
+  /* line 371, app/assets/stylesheets/application.scss.erb */
   .responsive-margins-sm, .responsive-margins-50-sm {
     width: 100%;
     /* The width is 100%, when the viewport is 800px or smaller */
   }
-  /* line 368, app/assets/stylesheets/application.scss.erb */
+  /* line 374, app/assets/stylesheets/application.scss.erb */
   #top-search-container {
     flex-grow: 1;
     width: calc(100% - 60px);
   }
-  /* line 372, app/assets/stylesheets/application.scss.erb */
+  /* line 378, app/assets/stylesheets/application.scss.erb */
   .responsive-xs-width-100 {
     width: 100%;
   }
