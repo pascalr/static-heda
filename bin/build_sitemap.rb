@@ -25,7 +25,7 @@ xml.urlset xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9" do |p|
   entries.each do |entry|
     lastmod = `git log -1 --pretty="format:%cs" #{entry}`
     if lastmod.empty?
-      puts "Warning: File #{entry} has not been pushed yet."
+      puts "Warning: File #{entry} has not been commited yet."
     else
       p.url do |u|
         u.loc "http://www.hedacuisine.com/#{entry}"
