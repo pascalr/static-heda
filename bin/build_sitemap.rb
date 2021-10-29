@@ -28,7 +28,7 @@ xml.urlset xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9" do |p|
       puts "Warning: File #{entry} has not been commited yet."
     else
       p.url do |u|
-        u.loc "http://www.hedacuisine.com/#{entry}"
+        u.loc "http://www.hedacuisine.com/#{entry[5..-11]}"
         u.lastmod lastmod
         #u.lastmod lastmod.empty? ? now : lastmod
       end
