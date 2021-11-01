@@ -2,5 +2,5 @@ User-agent: *
 Disallow: /packs/
 #Disallow: /images/
 Disallow: /assets/
-Disallow: /fr/aliments # not ready yet
+Disallow: /qc/aliments # not ready yet
 Disallow: /en/foods # not ready yet
