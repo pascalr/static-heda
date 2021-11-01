@@ -3,7 +3,7 @@
 entries = []
 
 #
-paths = ['index.html', 'qc/recettes/']
+paths = ['qc/index.html', 'qc/recettes/']
 paths.each do |basepath|
   if basepath[-1] == "/"
     Dir["docs/#{basepath}**/*.*"].each do |path|
