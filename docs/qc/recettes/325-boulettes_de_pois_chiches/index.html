@@ -4,10 +4,10 @@
     <title>Boulettes de pois chiches - HedaCuisine</title>
     
     <meta charset="utf-8"/>
-    <link rel="stylesheet" media="all" href="/assets/application-5635e9e44670be24f7c41b7af8c54bbcbc2ace783be5599738ec419ee339df65.css" />
-    <script src="/packs/js/application-7819bf4ed6e594700296.js"></script>
-    <script src="/packs/js/autocomplete-3b6b1a9dcb2dd4d59bba.js"></script>
+    <link rel="stylesheet" media="all" href="/assets/application-59587b638d46368ec83547019c1998522bb9ae82dc65ead6db643fafe2c6edad.css" />
+    <script src="/packs/js/application-ac9ce7bf108c50382ae7.js"></script>
     <link rel="stylesheet" media="screen" href="/packs/css/autocomplete-feef600d.css" />
+    <script src="/packs/js/autocomplete_search-ae526d63e76feb4fd8e6.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Ingrédients: pois chiches secs · oeuf · chapelure assaisonnée à l&#39;italienne · huile · fromage parmesan · sel · poivre · paprika fumé · ail en poudre">
@@ -21,57 +21,25 @@
 
   </head>
   <body>
+    <div id="top-search">
+      <input type="search" name="search" id="search" placeholder="Rechercher..." aria-lable="Search" data-autocomplete-url="/qc/recettes.json" />
+      <img class="search-image" style="width: 20px; height: 20px; margin-right: 5px; transform: translate(0px, -5px);" src="/assets/search-bc09a3aa92b5688300b90947bcdb05e3318e8e6dbfad4e00ae0f1c1550e0e5be.svg" />
+    </div>
     <span id="region" hidden>qc</span>
     <div class="responsive-margins-lg">
       <div style="min-height: 100%;">
-        <!-- collapsed -->
-<div class="d-md-none">
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="top-search-container">
-  <span id="search-list" data-values="[{&quot;label&quot;:&quot;Boulettes de pois chiches&quot;,&quot;url&quot;:&quot;/qc/recettes/325-boulettes_de_pois_chiches&quot;},{&quot;label&quot;:&quot;Pain blanc&quot;,&quot;url&quot;:&quot;/qc/recettes/1-pain_blanc&quot;},{&quot;label&quot;:&quot;Pâte brisée&quot;,&quot;url&quot;:&quot;/qc/recettes/331-p%C3%A2te_bris%C3%A9e&quot;},{&quot;label&quot;:&quot;Purée de courge poivrée&quot;,&quot;url&quot;:&quot;/qc/recettes/66-pur%C3%A9e_de_courge_poivr%C3%A9e&quot;},{&quot;label&quot;:&quot;Tarte au sucre&quot;,&quot;url&quot;:&quot;/qc/recettes/141-tarte_au_sucre&quot;},{&quot;label&quot;:&quot;Tofu poulet au beurre&quot;,&quot;url&quot;:&quot;/qc/recettes/221-tofu_poulet_au_beurre&quot;}]"/>
-    <form class="form-inline" action="/search/index?locale=fr-CA" accept-charset="UTF-8" method="get">
-      <input type="search" name="search" id="top-search" placeholder="Rechercher..." aria-lable="Search" data-autocomplete-links="search-list" />
-        <img style="width: 20px; height: 20px; margin-right: 5px; transform: translate(0px, -5px);" src="/assets/search-bc09a3aa92b5688300b90947bcdb05e3318e8e6dbfad4e00ae0f1c1550e0e5be.svg" />
-</form></div>
-
-<script src="/packs/js/autocomplete_search-5e9780bf03bb3c37e9cd.js"></script>
-
-    <div class="collapse navbar-collapse bg-dark">
-      <div class="navbar-nav">
-        <a class="navbar-brand" href="/qc">Heda</a>
-  <a class="nav-item nav-link active" href="/qc/recettes">Recettes</a>
-
-        
-      </div>
-    </div>
-  </nav>
-</div>
-<!-- expanded -->
-<div class="d-none d-md-block">
-  <nav class="navbar navbar-expand navbar-dark bg-dark justify-content-between">
-    <div class="navbar-nav">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse bg-dark">
+    <div class="navbar-nav" style="width: 100%;">
       <a class="navbar-brand" href="/qc">Heda</a>
-  <a class="nav-item nav-link active" href="/qc/recettes">Recettes</a>
-
+        <a class="nav-item nav-link active" href="/qc/recettes">Recettes</a>
+      <div style="flex-grow: 3;"></div>
     </div>
-    <div id="top-search-container">
-  <span id="search-list" data-values="[{&quot;label&quot;:&quot;Boulettes de pois chiches&quot;,&quot;url&quot;:&quot;/qc/recettes/325-boulettes_de_pois_chiches&quot;},{&quot;label&quot;:&quot;Pain blanc&quot;,&quot;url&quot;:&quot;/qc/recettes/1-pain_blanc&quot;},{&quot;label&quot;:&quot;Pâte brisée&quot;,&quot;url&quot;:&quot;/qc/recettes/331-p%C3%A2te_bris%C3%A9e&quot;},{&quot;label&quot;:&quot;Purée de courge poivrée&quot;,&quot;url&quot;:&quot;/qc/recettes/66-pur%C3%A9e_de_courge_poivr%C3%A9e&quot;},{&quot;label&quot;:&quot;Tarte au sucre&quot;,&quot;url&quot;:&quot;/qc/recettes/141-tarte_au_sucre&quot;},{&quot;label&quot;:&quot;Tofu poulet au beurre&quot;,&quot;url&quot;:&quot;/qc/recettes/221-tofu_poulet_au_beurre&quot;}]"/>
-    <form class="form-inline" action="/search/index?locale=fr-CA" accept-charset="UTF-8" method="get">
-      <input type="search" name="search" id="top-search" placeholder="Rechercher..." aria-lable="Search" data-autocomplete-links="search-list" />
-        <img style="width: 20px; height: 20px; margin-right: 5px; transform: translate(0px, -5px);" src="/assets/search-bc09a3aa92b5688300b90947bcdb05e3318e8e6dbfad4e00ae0f1c1550e0e5be.svg" />
-</form></div>
-
-<script src="/packs/js/autocomplete_search-5e9780bf03bb3c37e9cd.js"></script>
-
-    <div class="navbar-nav">
-      
-    </div>
-  </nav>
-</div>
-<div style="height: 10px; width: 100%;"></div>
+  </div>
+</nav>
 
 
 
@@ -318,6 +286,15 @@
     <h3>Préparation des pois chiches</h3><p><i>Si vous êtes pressés, vous pouvez sauter ces étapes et préparer les boulettes en utilisant  <span data-scalable-qty='1.0'>1</span>  conserve de pois chiche de 400 mL.</p></i><div><span class='step-number'>1</span> Faire tremper <span id="ingredient-510" data-scalable-ingredient="true" data-grams="141.66666666666666" data-ml="166.66666666666666" data-raw="2/3 t" data-food-name-singular="pois chiches secs" data-food-name-plural="" data-preposition="de " data-food-id="54" data-comment="">2/3 t de <a href="/qc/aliments/54-pois_chiches_secs">pois chiches secs</a> </span> de 8 à 24 heures dans un volume au moins trois fois plus grand d'eau.</div><div><span class='step-number'>2</span> Jeter l'eau de trempage, rincer puis égoutter.</div><div><span class='step-number'>3</span> Cuire à l'autocuiseur pendant 15 minutes ou porter à ébullition et laisser mijoter 45 minutes dans un chaudron.</div><h3>Préparation des boulettes</h3><div><span class='step-number'>4</span> Combiner aux pois chiches à l'aide d'un mixeur <ul class='recipe-ingredient-list dash'><li><span id="ingredient-172" data-scalable-ingredient="true" data-grams="100.0" data-ml="100.0" data-total="2.0" data-raw="2" data-food-name-singular="oeuf" data-food-name-plural="oeufs" data-preposition="d&#39;" data-food-id="7">2 <a href="/qc/aliments/7-oeuf">oeufs</a></span></li><li><span id="ingredient-245" data-scalable-ingredient="true" data-grams="63.75" data-ml="125.0" data-raw="0.5 t" data-food-name-singular="chapelure assaisonnée à l&#39;italienne" data-food-name-plural="" data-preposition="de " data-food-id="132">1/2 t de <a href="/qc/aliments/132-chapelure_assaisonn%C3%A9e_%C3%A0_l&#39;italienne">chapelure assaisonnée à l&#39;italienne</a></span></li><li><span id="ingredient-171" data-scalable-ingredient="true" data-grams="18.9" data-ml="29.999999999999996" data-raw="2 c. à soupe" data-food-name-singular="fromage parmesan" data-food-name-plural="" data-preposition="de " data-food-id="130">2 c. à soupe de <a href="/qc/aliments/130-fromage_parmesan">fromage parmesan</a></span></li><li><span id="ingredient-257" data-scalable-ingredient="true" data-grams="2.45" data-ml="5.000000000000001" data-raw="1 c. à thé" data-food-name-singular="poivre" data-food-name-plural="" data-preposition="de " data-food-id="22">1 c. à thé de <a href="/qc/aliments/22-poivre">poivre</a></span></li><li><span id="ingredient-168" data-scalable-ingredient="true" data-grams="1.6" data-ml="5.0" data-raw="1 c. à thé" data-food-name-singular="ail en poudre" data-food-name-plural="" data-preposition="d&#39;" data-food-id="80">1 c. à thé d'<a href="/qc/aliments/80-ail_en_poudre">ail en poudre</a></span></li><li><span id="ingredient-169" data-scalable-ingredient="true" data-grams="1.7625" data-ml="3.75" data-raw="0.75 c. à thé" data-food-name-singular="paprika fumé" data-food-name-plural="" data-preposition="de " data-food-id="117">3/4 c. à thé de <a href="/qc/aliments/117-paprika_fum%C3%A9">paprika fumé</a></span></li><li><span id="ingredient-170" data-scalable-ingredient="true" data-grams="4.575" data-ml="3.7500000000000004" data-raw="0.75 c. à thé" data-food-name-singular="sel" data-food-name-plural="" data-preposition="de " data-food-id="5">3/4 c. à thé de <a href="/qc/aliments/5-sel">sel</a></span></li></ul></div><div><span class='step-number'>5</span> Façonner le mélange en boulettes pas trop grosses pour s'assurer que les œufs soient bien cuits à l'intérieur.</div><div><span class='step-number'>6</span> Faire chauffer <span id="ingredient-511" data-scalable-ingredient="true" data-grams="27.900000000000002" data-ml="30.0" data-raw="2 c. à table" data-food-name-singular="huile" data-food-name-plural="" data-preposition="d&#39;" data-food-id="14">2 c. à soupe d'<a href="/qc/aliments/14-huile">huile</a></span> dans une casserole à feu moyen, puis faire revenir les boulettes et cuire de 6 à 8 minutes.</div><p><i>Servir avec des pâtes à la sauce tomate, dans des sous-marins ou encore dans des pains pitas.</p></i>
   </div>
   
+
+    <h2 class="h2" style="margin-top: 2rem;">Références</h2>
+
+    <div style="font-size: 1.1rem; margin-left: 1em;">
+        <div>
+          1.
+            <a href="https://dishingouthealth.com/chickpea-meatballs/">https://dishingouthealth.com/chickpea-meatballs/</a>
+        </div>
+    </div>
   
   <h2 class="h2" style="margin-top: 2rem;">Commentaires</h2>
 
@@ -326,10 +303,10 @@
   <div style="height: 3rem;"></div>
 </div>
 
-<script src="/packs/js/toggle_link-3134eb26a5caa60b2d7a.js"></script>
-<script src="/packs/js/dropdown_submenu-ca5fd4ec1ad0409897c6.js"></script>
-<script src="/packs/js/recipe_rating_read_only-e6414da5cf8ab9f68d23.js"></script>
-<script src="/packs/js/recipes_show-30fce793925b6acb4af1.js"></script>
+<script src="/packs/js/toggle_link-82a02f46e61eafe9be6d.js"></script>
+<script src="/packs/js/dropdown_submenu-e889d2dcd531de16dd92.js"></script>
+<script src="/packs/js/recipe_rating_read_only-c90b138a41878a4b8cc1.js"></script>
+<script src="/packs/js/recipes_show-980c945be2bc1884b478.js"></script>
 
 
         </div>

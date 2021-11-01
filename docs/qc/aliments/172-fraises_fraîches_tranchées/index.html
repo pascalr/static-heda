@@ -4,67 +4,35 @@
     <title>Fraises fraîches tranchées - HedaCuisine</title>
     
     <meta charset="utf-8"/>
-    <link rel="stylesheet" media="all" href="/assets/application-5635e9e44670be24f7c41b7af8c54bbcbc2ace783be5599738ec419ee339df65.css" />
-    <script src="/packs/js/application-7819bf4ed6e594700296.js"></script>
-    <script src="/packs/js/autocomplete-3b6b1a9dcb2dd4d59bba.js"></script>
+    <link rel="stylesheet" media="all" href="/assets/application-59587b638d46368ec83547019c1998522bb9ae82dc65ead6db643fafe2c6edad.css" />
+    <script src="/packs/js/application-ac9ce7bf108c50382ae7.js"></script>
     <link rel="stylesheet" media="screen" href="/packs/css/autocomplete-feef600d.css" />
+    <script src="/packs/js/autocomplete_search-ae526d63e76feb4fd8e6.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta property="og:locale" content="fr_CA">
     
   </head>
   <body>
+    <div id="top-search">
+      <input type="search" name="search" id="search" placeholder="Rechercher..." aria-lable="Search" data-autocomplete-url="/qc/recettes.json" />
+      <img class="search-image" style="width: 20px; height: 20px; margin-right: 5px; transform: translate(0px, -5px);" src="/assets/search-bc09a3aa92b5688300b90947bcdb05e3318e8e6dbfad4e00ae0f1c1550e0e5be.svg" />
+    </div>
     <span id="region" hidden>qc</span>
     <div class="responsive-margins-lg">
       <div style="min-height: 100%;">
-        <!-- collapsed -->
-<div class="d-md-none">
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="top-search-container">
-  <span id="search-list" data-values="[{&quot;label&quot;:&quot;Boulettes de pois chiches&quot;,&quot;url&quot;:&quot;/qc/recettes/325-boulettes_de_pois_chiches&quot;},{&quot;label&quot;:&quot;Pain blanc&quot;,&quot;url&quot;:&quot;/qc/recettes/1-pain_blanc&quot;},{&quot;label&quot;:&quot;Pâte brisée&quot;,&quot;url&quot;:&quot;/qc/recettes/331-p%C3%A2te_bris%C3%A9e&quot;},{&quot;label&quot;:&quot;Purée de courge poivrée&quot;,&quot;url&quot;:&quot;/qc/recettes/66-pur%C3%A9e_de_courge_poivr%C3%A9e&quot;},{&quot;label&quot;:&quot;Tarte au sucre&quot;,&quot;url&quot;:&quot;/qc/recettes/141-tarte_au_sucre&quot;},{&quot;label&quot;:&quot;Tofu poulet au beurre&quot;,&quot;url&quot;:&quot;/qc/recettes/221-tofu_poulet_au_beurre&quot;}]"/>
-    <form class="form-inline" action="/search/index?locale=fr-CA" accept-charset="UTF-8" method="get">
-      <input type="search" name="search" id="top-search" placeholder="Rechercher..." aria-lable="Search" data-autocomplete-links="search-list" />
-        <img style="width: 20px; height: 20px; margin-right: 5px; transform: translate(0px, -5px);" src="/assets/search-bc09a3aa92b5688300b90947bcdb05e3318e8e6dbfad4e00ae0f1c1550e0e5be.svg" />
-</form></div>
-
-<script src="/packs/js/autocomplete_search-5e9780bf03bb3c37e9cd.js"></script>
-
-    <div class="collapse navbar-collapse bg-dark">
-      <div class="navbar-nav">
-        <a class="navbar-brand" href="/qc">Heda</a>
-  <a class="nav-item nav-link" href="/qc/recettes">Recettes</a>
-
-        
-      </div>
-    </div>
-  </nav>
-</div>
-<!-- expanded -->
-<div class="d-none d-md-block">
-  <nav class="navbar navbar-expand navbar-dark bg-dark justify-content-between">
-    <div class="navbar-nav">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse bg-dark">
+    <div class="navbar-nav" style="width: 100%;">
       <a class="navbar-brand" href="/qc">Heda</a>
-  <a class="nav-item nav-link" href="/qc/recettes">Recettes</a>
-
+        <a class="nav-item nav-link" href="/qc/recettes">Recettes</a>
+      <div style="flex-grow: 3;"></div>
     </div>
-    <div id="top-search-container">
-  <span id="search-list" data-values="[{&quot;label&quot;:&quot;Boulettes de pois chiches&quot;,&quot;url&quot;:&quot;/qc/recettes/325-boulettes_de_pois_chiches&quot;},{&quot;label&quot;:&quot;Pain blanc&quot;,&quot;url&quot;:&quot;/qc/recettes/1-pain_blanc&quot;},{&quot;label&quot;:&quot;Pâte brisée&quot;,&quot;url&quot;:&quot;/qc/recettes/331-p%C3%A2te_bris%C3%A9e&quot;},{&quot;label&quot;:&quot;Purée de courge poivrée&quot;,&quot;url&quot;:&quot;/qc/recettes/66-pur%C3%A9e_de_courge_poivr%C3%A9e&quot;},{&quot;label&quot;:&quot;Tarte au sucre&quot;,&quot;url&quot;:&quot;/qc/recettes/141-tarte_au_sucre&quot;},{&quot;label&quot;:&quot;Tofu poulet au beurre&quot;,&quot;url&quot;:&quot;/qc/recettes/221-tofu_poulet_au_beurre&quot;}]"/>
-    <form class="form-inline" action="/search/index?locale=fr-CA" accept-charset="UTF-8" method="get">
-      <input type="search" name="search" id="top-search" placeholder="Rechercher..." aria-lable="Search" data-autocomplete-links="search-list" />
-        <img style="width: 20px; height: 20px; margin-right: 5px; transform: translate(0px, -5px);" src="/assets/search-bc09a3aa92b5688300b90947bcdb05e3318e8e6dbfad4e00ae0f1c1550e0e5be.svg" />
-</form></div>
-
-<script src="/packs/js/autocomplete_search-5e9780bf03bb3c37e9cd.js"></script>
-
-    <div class="navbar-nav">
-      
-    </div>
-  </nav>
-</div>
-<div style="height: 10px; width: 100%;"></div>
+  </div>
+</nav>
 
 
 

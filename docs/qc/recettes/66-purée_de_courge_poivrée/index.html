@@ -4,10 +4,10 @@
     <title>Purée de courge poivrée (version 1 ☆☆☆☆☆ (0)) - HedaCuisine</title>
     
     <meta charset="utf-8"/>
-    <link rel="stylesheet" media="all" href="/assets/application-5635e9e44670be24f7c41b7af8c54bbcbc2ace783be5599738ec419ee339df65.css" />
-    <script src="/packs/js/application-7819bf4ed6e594700296.js"></script>
-    <script src="/packs/js/autocomplete-3b6b1a9dcb2dd4d59bba.js"></script>
+    <link rel="stylesheet" media="all" href="/assets/application-59587b638d46368ec83547019c1998522bb9ae82dc65ead6db643fafe2c6edad.css" />
+    <script src="/packs/js/application-ac9ce7bf108c50382ae7.js"></script>
     <link rel="stylesheet" media="screen" href="/packs/css/autocomplete-feef600d.css" />
+    <script src="/packs/js/autocomplete_search-ae526d63e76feb4fd8e6.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Ingrédients: courge poivrée · beurre · sirop d&#39;érable · gingembre moulu · sel et poivre">
@@ -21,57 +21,25 @@
 
   </head>
   <body>
+    <div id="top-search">
+      <input type="search" name="search" id="search" placeholder="Rechercher..." aria-lable="Search" data-autocomplete-url="/qc/recettes.json" />
+      <img class="search-image" style="width: 20px; height: 20px; margin-right: 5px; transform: translate(0px, -5px);" src="/assets/search-bc09a3aa92b5688300b90947bcdb05e3318e8e6dbfad4e00ae0f1c1550e0e5be.svg" />
+    </div>
     <span id="region" hidden>qc</span>
     <div class="responsive-margins-lg">
       <div style="min-height: 100%;">
-        <!-- collapsed -->
-<div class="d-md-none">
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="top-search-container">
-  <span id="search-list" data-values="[{&quot;label&quot;:&quot;Boulettes de pois chiches&quot;,&quot;url&quot;:&quot;/qc/recettes/325-boulettes_de_pois_chiches&quot;},{&quot;label&quot;:&quot;Pain blanc&quot;,&quot;url&quot;:&quot;/qc/recettes/1-pain_blanc&quot;},{&quot;label&quot;:&quot;Pâte brisée&quot;,&quot;url&quot;:&quot;/qc/recettes/331-p%C3%A2te_bris%C3%A9e&quot;},{&quot;label&quot;:&quot;Purée de courge poivrée&quot;,&quot;url&quot;:&quot;/qc/recettes/66-pur%C3%A9e_de_courge_poivr%C3%A9e&quot;},{&quot;label&quot;:&quot;Tarte au sucre&quot;,&quot;url&quot;:&quot;/qc/recettes/141-tarte_au_sucre&quot;},{&quot;label&quot;:&quot;Tofu poulet au beurre&quot;,&quot;url&quot;:&quot;/qc/recettes/221-tofu_poulet_au_beurre&quot;}]"/>
-    <form class="form-inline" action="/search/index?locale=fr-CA" accept-charset="UTF-8" method="get">
-      <input type="search" name="search" id="top-search" placeholder="Rechercher..." aria-lable="Search" data-autocomplete-links="search-list" />
-        <img style="width: 20px; height: 20px; margin-right: 5px; transform: translate(0px, -5px);" src="/assets/search-bc09a3aa92b5688300b90947bcdb05e3318e8e6dbfad4e00ae0f1c1550e0e5be.svg" />
-</form></div>
-
-<script src="/packs/js/autocomplete_search-5e9780bf03bb3c37e9cd.js"></script>
-
-    <div class="collapse navbar-collapse bg-dark">
-      <div class="navbar-nav">
-        <a class="navbar-brand" href="/qc">Heda</a>
-  <a class="nav-item nav-link active" href="/qc/recettes">Recettes</a>
-
-        
-      </div>
-    </div>
-  </nav>
-</div>
-<!-- expanded -->
-<div class="d-none d-md-block">
-  <nav class="navbar navbar-expand navbar-dark bg-dark justify-content-between">
-    <div class="navbar-nav">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse bg-dark">
+    <div class="navbar-nav" style="width: 100%;">
       <a class="navbar-brand" href="/qc">Heda</a>
-  <a class="nav-item nav-link active" href="/qc/recettes">Recettes</a>
-
+        <a class="nav-item nav-link active" href="/qc/recettes">Recettes</a>
+      <div style="flex-grow: 3;"></div>
     </div>
-    <div id="top-search-container">
-  <span id="search-list" data-values="[{&quot;label&quot;:&quot;Boulettes de pois chiches&quot;,&quot;url&quot;:&quot;/qc/recettes/325-boulettes_de_pois_chiches&quot;},{&quot;label&quot;:&quot;Pain blanc&quot;,&quot;url&quot;:&quot;/qc/recettes/1-pain_blanc&quot;},{&quot;label&quot;:&quot;Pâte brisée&quot;,&quot;url&quot;:&quot;/qc/recettes/331-p%C3%A2te_bris%C3%A9e&quot;},{&quot;label&quot;:&quot;Purée de courge poivrée&quot;,&quot;url&quot;:&quot;/qc/recettes/66-pur%C3%A9e_de_courge_poivr%C3%A9e&quot;},{&quot;label&quot;:&quot;Tarte au sucre&quot;,&quot;url&quot;:&quot;/qc/recettes/141-tarte_au_sucre&quot;},{&quot;label&quot;:&quot;Tofu poulet au beurre&quot;,&quot;url&quot;:&quot;/qc/recettes/221-tofu_poulet_au_beurre&quot;}]"/>
-    <form class="form-inline" action="/search/index?locale=fr-CA" accept-charset="UTF-8" method="get">
-      <input type="search" name="search" id="top-search" placeholder="Rechercher..." aria-lable="Search" data-autocomplete-links="search-list" />
-        <img style="width: 20px; height: 20px; margin-right: 5px; transform: translate(0px, -5px);" src="/assets/search-bc09a3aa92b5688300b90947bcdb05e3318e8e6dbfad4e00ae0f1c1550e0e5be.svg" />
-</form></div>
-
-<script src="/packs/js/autocomplete_search-5e9780bf03bb3c37e9cd.js"></script>
-
-    <div class="navbar-nav">
-      
-    </div>
-  </nav>
-</div>
-<div style="height: 10px; width: 100%;"></div>
+  </div>
+</nav>
 
 
 
@@ -225,8 +193,8 @@
 
       <div style="margin-top: 0.25rem; text-align: center;">
         <div style="float: left;">
-          <input type="text" name="quantity" id="ingredient-qty-input-field" class="form-control" style="width: 9rem; display: inline; text-align: right;" data-quantity="" />
-          <select class="form-select" id="input-ingredients" style="display: inline-block; width: auto;" name="foo[input_ingredient]"><option value="533">courge poivrée</option>
+          <input type="text" name="quantity" id="ingredient-qty-input-field" value="1" class="form-control" style="width: 9rem; display: inline; text-align: right;" data-quantity="1" />
+          <select class="form-select" id="input-ingredients" style="display: inline-block; width: auto;" name="foo[input_ingredient]"><option selected="selected" value="533">courge poivrée</option>
 <option value="537">sel et poivre</option>
 <option value="535">beurre</option>
 <option value="536">gingembre moulu</option>
@@ -251,6 +219,15 @@
     <div><span class='step-number'>1</span> Placer la grille au centre du four. Préchauffer le four à 180 °C (350 °F).</div><div><span class='step-number'>2</span> Couper <span id="ingredient-533" data-scalable-ingredient="true" data-grams="9999.0" data-ml="9999.0" data-total="1.0" data-raw="1" data-food-name-singular="courge poivrée" data-food-name-plural="courges poivrées" data-preposition="de " data-food-id="263">1 <a href="/qc/aliments/263-courge_poivr%C3%A9e">courge poivrée</a></span> en deux sur la longueur et retirer les graines. Saler et poivrer. Placer sur un tapis à cuisson en silicone sur une plaque, partie coupée vers le bas, et cuire 1 heure ou jusqu’à ce que la courge soit tendre. Laisser tiédir pour retirer la chair plus facilement sans se brûler.</div><div><span class='step-number'>3</span> Retirer la chair à l'aide d'une cuillère. À l'aide d'un bras mélangeur, réduire en purée la chair de la courge avec le reste des ingrédients. <ul class='recipe-ingredient-list dash'><li><span id="ingredient-534" data-scalable-ingredient="true" data-grams="30.0" data-ml="30.0" data-raw="2 c. à soupe" data-food-name-singular="sirop d&#39;érable" data-food-name-plural="" data-preposition="de " data-food-id="29">2 c. à soupe de <a href="/qc/aliments/29-sirop_d&#39;%C3%A9rable">sirop d&#39;érable</a></span></li><li><span id="ingredient-535" data-scalable-ingredient="true" data-grams="43.199999999999996" data-ml="45.0" data-raw="3 c. à soupe" data-food-name-singular="beurre" data-food-name-plural="" data-preposition="de " data-food-id="34">3 c. à soupe de <a href="/qc/aliments/34-beurre">beurre</a></span></li><li><span id="ingredient-536" data-scalable-ingredient="true" data-grams="0.1767" data-ml="0.31" data-raw="1 pincée" data-food-name-singular="gingembre moulu" data-food-name-plural="" data-preposition="de " data-food-id="51">1 pincée de <a href="/qc/aliments/51-gingembre_moulu">gingembre moulu</a></span></li><li><span id="ingredient-537" data-scalable-ingredient="true" data-food-name-singular="sel et poivre" data-food-name-plural="" data-preposition="de " data-food-id="275"><a href="/qc/aliments/275-sel_et_poivre">sel et poivre</a></span></li></ul></div>
   </div>
   
+
+    <h2 class="h2" style="margin-top: 2rem;">Références</h2>
+
+    <div style="font-size: 1.1rem; margin-left: 1em;">
+        <div>
+          1.
+            <a href="https://www.ricardocuisine.com/recettes/205-puree-de-courge-poivree-a-l-erable">https://www.ricardocuisine.com/recettes/205-puree-de-courge-poivree-a-l-erable</a>
+        </div>
+    </div>
   
   <h2 class="h2" style="margin-top: 2rem;">Commentaires</h2>
 
@@ -259,10 +236,10 @@
   <div style="height: 3rem;"></div>
 </div>
 
-<script src="/packs/js/toggle_link-3134eb26a5caa60b2d7a.js"></script>
-<script src="/packs/js/dropdown_submenu-ca5fd4ec1ad0409897c6.js"></script>
-<script src="/packs/js/recipe_rating_read_only-e6414da5cf8ab9f68d23.js"></script>
-<script src="/packs/js/recipes_show-30fce793925b6acb4af1.js"></script>
+<script src="/packs/js/toggle_link-82a02f46e61eafe9be6d.js"></script>
+<script src="/packs/js/dropdown_submenu-e889d2dcd531de16dd92.js"></script>
+<script src="/packs/js/recipe_rating_read_only-c90b138a41878a4b8cc1.js"></script>
+<script src="/packs/js/recipes_show-980c945be2bc1884b478.js"></script>
 
 
         </div>

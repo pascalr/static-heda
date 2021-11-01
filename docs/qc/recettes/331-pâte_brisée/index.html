@@ -4,10 +4,10 @@
     <title>Pâte brisée - HedaCuisine</title>
     
     <meta charset="utf-8"/>
-    <link rel="stylesheet" media="all" href="/assets/application-5635e9e44670be24f7c41b7af8c54bbcbc2ace783be5599738ec419ee339df65.css" />
-    <script src="/packs/js/application-7819bf4ed6e594700296.js"></script>
-    <script src="/packs/js/autocomplete-3b6b1a9dcb2dd4d59bba.js"></script>
+    <link rel="stylesheet" media="all" href="/assets/application-59587b638d46368ec83547019c1998522bb9ae82dc65ead6db643fafe2c6edad.css" />
+    <script src="/packs/js/application-ac9ce7bf108c50382ae7.js"></script>
     <link rel="stylesheet" media="screen" href="/packs/css/autocomplete-feef600d.css" />
+    <script src="/packs/js/autocomplete_search-ae526d63e76feb4fd8e6.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Ingrédients: farine · beurre non salé · eau · sel">
@@ -21,57 +21,25 @@
 
   </head>
   <body>
+    <div id="top-search">
+      <input type="search" name="search" id="search" placeholder="Rechercher..." aria-lable="Search" data-autocomplete-url="/qc/recettes.json" />
+      <img class="search-image" style="width: 20px; height: 20px; margin-right: 5px; transform: translate(0px, -5px);" src="/assets/search-bc09a3aa92b5688300b90947bcdb05e3318e8e6dbfad4e00ae0f1c1550e0e5be.svg" />
+    </div>
     <span id="region" hidden>qc</span>
     <div class="responsive-margins-lg">
       <div style="min-height: 100%;">
-        <!-- collapsed -->
-<div class="d-md-none">
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="top-search-container">
-  <span id="search-list" data-values="[{&quot;label&quot;:&quot;Boulettes de pois chiches&quot;,&quot;url&quot;:&quot;/qc/recettes/325-boulettes_de_pois_chiches&quot;},{&quot;label&quot;:&quot;Pain blanc&quot;,&quot;url&quot;:&quot;/qc/recettes/1-pain_blanc&quot;},{&quot;label&quot;:&quot;Pâte brisée&quot;,&quot;url&quot;:&quot;/qc/recettes/331-p%C3%A2te_bris%C3%A9e&quot;},{&quot;label&quot;:&quot;Purée de courge poivrée&quot;,&quot;url&quot;:&quot;/qc/recettes/66-pur%C3%A9e_de_courge_poivr%C3%A9e&quot;},{&quot;label&quot;:&quot;Tarte au sucre&quot;,&quot;url&quot;:&quot;/qc/recettes/141-tarte_au_sucre&quot;},{&quot;label&quot;:&quot;Tofu poulet au beurre&quot;,&quot;url&quot;:&quot;/qc/recettes/221-tofu_poulet_au_beurre&quot;}]"/>
-    <form class="form-inline" action="/search/index?locale=fr-CA" accept-charset="UTF-8" method="get">
-      <input type="search" name="search" id="top-search" placeholder="Rechercher..." aria-lable="Search" data-autocomplete-links="search-list" />
-        <img style="width: 20px; height: 20px; margin-right: 5px; transform: translate(0px, -5px);" src="/assets/search-bc09a3aa92b5688300b90947bcdb05e3318e8e6dbfad4e00ae0f1c1550e0e5be.svg" />
-</form></div>
-
-<script src="/packs/js/autocomplete_search-5e9780bf03bb3c37e9cd.js"></script>
-
-    <div class="collapse navbar-collapse bg-dark">
-      <div class="navbar-nav">
-        <a class="navbar-brand" href="/qc">Heda</a>
-  <a class="nav-item nav-link active" href="/qc/recettes">Recettes</a>
-
-        
-      </div>
-    </div>
-  </nav>
-</div>
-<!-- expanded -->
-<div class="d-none d-md-block">
-  <nav class="navbar navbar-expand navbar-dark bg-dark justify-content-between">
-    <div class="navbar-nav">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse bg-dark">
+    <div class="navbar-nav" style="width: 100%;">
       <a class="navbar-brand" href="/qc">Heda</a>
-  <a class="nav-item nav-link active" href="/qc/recettes">Recettes</a>
-
+        <a class="nav-item nav-link active" href="/qc/recettes">Recettes</a>
+      <div style="flex-grow: 3;"></div>
     </div>
-    <div id="top-search-container">
-  <span id="search-list" data-values="[{&quot;label&quot;:&quot;Boulettes de pois chiches&quot;,&quot;url&quot;:&quot;/qc/recettes/325-boulettes_de_pois_chiches&quot;},{&quot;label&quot;:&quot;Pain blanc&quot;,&quot;url&quot;:&quot;/qc/recettes/1-pain_blanc&quot;},{&quot;label&quot;:&quot;Pâte brisée&quot;,&quot;url&quot;:&quot;/qc/recettes/331-p%C3%A2te_bris%C3%A9e&quot;},{&quot;label&quot;:&quot;Purée de courge poivrée&quot;,&quot;url&quot;:&quot;/qc/recettes/66-pur%C3%A9e_de_courge_poivr%C3%A9e&quot;},{&quot;label&quot;:&quot;Tarte au sucre&quot;,&quot;url&quot;:&quot;/qc/recettes/141-tarte_au_sucre&quot;},{&quot;label&quot;:&quot;Tofu poulet au beurre&quot;,&quot;url&quot;:&quot;/qc/recettes/221-tofu_poulet_au_beurre&quot;}]"/>
-    <form class="form-inline" action="/search/index?locale=fr-CA" accept-charset="UTF-8" method="get">
-      <input type="search" name="search" id="top-search" placeholder="Rechercher..." aria-lable="Search" data-autocomplete-links="search-list" />
-        <img style="width: 20px; height: 20px; margin-right: 5px; transform: translate(0px, -5px);" src="/assets/search-bc09a3aa92b5688300b90947bcdb05e3318e8e6dbfad4e00ae0f1c1550e0e5be.svg" />
-</form></div>
-
-<script src="/packs/js/autocomplete_search-5e9780bf03bb3c37e9cd.js"></script>
-
-    <div class="navbar-nav">
-      
-    </div>
-  </nav>
-</div>
-<div style="height: 10px; width: 100%;"></div>
+  </div>
+</nav>
 
 
 
@@ -141,9 +109,14 @@
   <div style="color: white; font-weight: bold; width: 100%;">
     <span style="margin-right: 1rem;">Pâte brisée</span>
 
-        <span class="btn btn-outline-secondary" style="padding: 0.1rem 0.4rem; background-color: #333; color: white; cursor: unset;">
-          ☆☆☆☆☆ (0)
-        </span>
+      <div class="dropdown inline">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="versionsMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0.1rem 0.4rem; background-color: #333; color: white">
+          version 1 ☆☆☆☆☆ (0)
+        </button>
+        <div class="dropdown-menu" aria-labelledby="versionsMenuButton">
+            <a class="dropdown-item" href="/qc/recettes/600-p%C3%A2te_bris%C3%A9e">version 2 ☆☆☆☆☆ (0)</a>
+        </div>
+      </div>
   </div>
 </div>
 
@@ -248,6 +221,15 @@
     <div><span class='step-number'>1</span> Dans un grand bol, mélanger la farine et le sel. <ul class='recipe-ingredient-list dash'><li><span id="ingredient-616" data-scalable-ingredient="true" data-grams="151.875" data-ml="281.25" data-raw="1 1/8 t" data-food-name-singular="farine" data-food-name-plural="" data-preposition="de " data-food-id="4">1 1/8 t de <a href="/qc/aliments/4-farine">farine</a></span></li><li><span id="ingredient-617" data-scalable-ingredient="true" data-grams="0.7625" data-ml="0.625" data-raw="1/8 c. à thé" data-food-name-singular="sel" data-food-name-plural="" data-preposition="de " data-food-id="5">1/8 c. à thé de <a href="/qc/aliments/5-sel">sel</a></span></li></ul></div><div><span class='step-number'>2</span> Couper <span id="ingredient-618" data-scalable-ingredient="true" data-grams="90.0" data-ml="90.0" data-raw="6 c. à soupe" data-food-name-singular="beurre non salé" data-preposition="de " data-food-id="82" data-comment="froid">1/3 t de <a href="/qc/aliments/82-beurre_non_sal%C3%A9">beurre non salé</a> froid</span> en dés et l'incorporer dans la farine à l’aide d’un coupe-pâte ou de deux couteaux afin d’obtenir une texture granuleuse où l’on distingue de petits morceaux de beurre de la grosseur de petits pois.</div><div><span class='step-number'>3</span> Incorporer <span id="ingredient-619" data-scalable-ingredient="true" data-grams="45.0" data-ml="45.0" data-raw="3 c. à soupe" data-food-name-singular="eau" data-food-name-plural="" data-preposition="d&#39;" data-food-id="1" data-comment="glacée">3 c. à soupe d'<a href="/qc/aliments/1-eau">eau</a> glacée</span> graduellement en mélangeant délicatement et en évitant qu’une partie ne devienne plus mouillée qu’une autre.</div><div><span class='step-number'>4</span> Ajouter petit à petit de l'eau au besoin jusqu'à ce que le mélange se tienne lorsqu’on le presse entre les doigts. Former  <span data-scalable-qty='1.0'>1</span>  disque épais.</div><div><span class='step-number'>5</span> Recouvrir et réfrigérer la pâte 30 minutes.</div><div><span class='step-number'>6</span> Sur un plan de travail fariné, abaisser la pâte pour former une croûte de 23 cm (9 po) de diamètre.</div>
   </div>
   
+
+    <h2 class="h2" style="margin-top: 2rem;">Références</h2>
+
+    <div style="font-size: 1.1rem; margin-left: 1em;">
+        <div>
+          1.
+            <a href="https://www.ricardocuisine.com/recettes/4817-pate-brisee-de-base">https://www.ricardocuisine.com/recettes/4817-pate-brisee-de-base</a>
+        </div>
+    </div>
   
   <h2 class="h2" style="margin-top: 2rem;">Commentaires</h2>
 
@@ -256,10 +238,10 @@
   <div style="height: 3rem;"></div>
 </div>
 
-<script src="/packs/js/toggle_link-3134eb26a5caa60b2d7a.js"></script>
-<script src="/packs/js/dropdown_submenu-ca5fd4ec1ad0409897c6.js"></script>
-<script src="/packs/js/recipe_rating_read_only-e6414da5cf8ab9f68d23.js"></script>
-<script src="/packs/js/recipes_show-30fce793925b6acb4af1.js"></script>
+<script src="/packs/js/toggle_link-82a02f46e61eafe9be6d.js"></script>
+<script src="/packs/js/dropdown_submenu-e889d2dcd531de16dd92.js"></script>
+<script src="/packs/js/recipe_rating_read_only-c90b138a41878a4b8cc1.js"></script>
+<script src="/packs/js/recipes_show-980c945be2bc1884b478.js"></script>
 
 
         </div>
