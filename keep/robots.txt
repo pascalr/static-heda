@@ -1,6 +1,11 @@
-User-agent: *
-Disallow: /packs/
+#User-agent: *
+#Disallow: /packs/
 #Disallow: /images/
-Disallow: /assets/
+#Disallow: /assets/
+#Disallow: /en/foods # not ready yet
+
+User-agent: *
+Allow: /
 Disallow: /qc/aliments # not ready yet
-Disallow: /en/foods # not ready yet
+
+Sitemap: http://www.hedacuisine.com/sitemap.xml
