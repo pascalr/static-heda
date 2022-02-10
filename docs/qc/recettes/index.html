@@ -4,46 +4,445 @@
     <title>HedaCuisine - Recettes</title>
     
     <meta charset="utf-8"/>
-    <link rel="stylesheet" media="all" href="/assets/application-59587b638d46368ec83547019c1998522bb9ae82dc65ead6db643fafe2c6edad.css" />
-    <script src="/packs/js/application-ac9ce7bf108c50382ae7.js"></script>
+    <link rel="stylesheet" media="all" href="/assets/application-ee36f3f7e24cb920f4451611a0f92885e549c17af4581e43714151130dda2a6c.css" />
+    <script src="/packs/js/application-edcf36234bd0db71c0bc.js"></script>
     <link rel="stylesheet" media="screen" href="/packs/css/autocomplete-feef600d.css" />
-    <script src="/packs/js/autocomplete_search-ae526d63e76feb4fd8e6.js"></script>
+    <script src="/packs/js/autocomplete_search-5072452163036b1839c1.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Découvrez nos dernières recettes ou recherchez une recette en particulier.">
-    <meta property="og:locale" content="fr_CA">
+      <meta property="og:locale" content="fr_CA">
+      <span id="region" hidden>qc</span>
+    
     
   </head>
   <body>
     <div id="top-search">
-      <input type="search" name="search" id="search" placeholder="Rechercher..." aria-lable="Search" data-autocomplete-url="/qc/recettes.json" />
-      <img class="search-image" style="width: 20px; height: 20px; margin-right: 5px; transform: translate(0px, -5px);" src="/assets/search-bc09a3aa92b5688300b90947bcdb05e3318e8e6dbfad4e00ae0f1c1550e0e5be.svg" />
+      <input type="search" name="search" id="search" placeholder="Rechercher..." aria-label="Search" data-autocomplete-url="/qc/search/data.json" />
+      <img class="search-image" style="width: 20px; height: 20px; margin-right: 5px; transform: translate(0px, -5px);" src="/icons/search.svg" />
     </div>
-    <span id="region" hidden>qc</span>
     <div class="responsive-margins-lg">
       <div style="min-height: 100%;">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="padding-bottom: 0;">
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse bg-dark">
     <div class="navbar-nav" style="width: 100%;">
       <a class="navbar-brand" href="/qc">Heda</a>
-        <a class="nav-item nav-link active" href="/qc/recettes">Recettes</a>
+      <a class="nav-item nav-link active" href="/qc/recettes">Recettes</a>
+      <a class="nav-item nav-link" href="/qc/livres">Livres</a>
       <div style="flex-grow: 3;"></div>
     </div>
   </div>
 </nav>
 
+        <nav class="navbar navbar-expand navbar-dark bg-dark" style="padding: 0;">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse bg-dark">
+    <div class="navbar-nav" style="width: 100%;">
+      <a class="nav-item nav-link" href="https://aqueous-fortress-30634.herokuapp.com/qc/mes_recettes">Mes recettes</a>
+      <a class="nav-item nav-link" href="https://aqueous-fortress-30634.herokuapp.com/qc/mes_livres">Mes livres</a>
+      <div style="flex-grow: 3;"></div>
+        <a class="nav-item nav-link" href="https://aqueous-fortress-30634.herokuapp.com/users/sign_in?locale=fr-CA">Connexion</a>
+    </div>
+  </div>
+</nav>
 
 
-        <div class="root">
+        
+        <noscript><p class="warning">Note: Ce site est statique. Il requiert que javascript soit activé pour bien fonctionner. <a class="btn btn-sm btn-secondary" style="margin-left: 10px;" href="https://enable-javascript.com/">Voir comment activer javascript</a></p></noscript>
+
+        <div>
           
 
 
+  <div style="height: 250px;">
+    
 
+  <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/6-Biscuits">Biscuits</a></span>
+  
+  
+  <span id="prev-recipe-carrousel-6" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
+  <span id="next-recipe-carrousel-6" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
 
-<style>
+  <div id="recipe-carrousel-6" class="recipe-carrousel" style="display: flex;">
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/51-Biscuits-aux-brisures-de-chocolat">
+          <img width="255" height="171" src="/images/15/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Biscuits aux brisures de chocolat <span style="font-size: 0.8em;">(1&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/16-Biscuits-%C3%A0-l&#39;avoine">
+          <img width="255" height="171" src="/images/72/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Biscuits à l&#39;avoine <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/26-Biscuits-%C3%A0-la-m%C3%A9lasse">
+          <img width="255" height="171" src="/images/71/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Biscuits à la mélasse <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/29-Biscuits-bonshommes-en-pain-d&#39;%C3%A9pice">
+          <img width="255" height="171" src="/images/69/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Biscuits bonshommes en pain d&#39;épice <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/33-Biscuits-double-chocolat">
+          <img width="255" height="171" src="/images/73/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Biscuits double chocolat <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/3-Macarons">
+          <img width="255" height="171" src="/images/80/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Macarons <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+  </div>
+
+  </div>
+  <div style="height: 250px;">
+    
+
+  <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/1-Tarte">Tarte</a></span>
+  
+  
+  <span id="prev-recipe-carrousel-1" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
+  <span id="next-recipe-carrousel-1" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+
+  <div id="recipe-carrousel-1" class="recipe-carrousel" style="display: flex;">
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/30-Tarte-%C3%A0-la-lime">
+          <img width="255" height="171" src="/images/66/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Tarte à la lime <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/44-Tarte-aux-apricots">
+          <img width="255" height="171" src="/images/76/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Tarte aux apricots <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/10-Tarte-aux-fraises">
+          <img width="255" height="171" src="/images/65/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Tarte aux fraises <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/9-Tarte-aux-bleuets">
+          <img width="255" height="171" src="/images/67/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Tarte aux bleuets <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/46-Tarte-au-sucre">
+          <img width="255" height="171" src="/images/23/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Tarte au sucre <span style="font-size: 0.8em;">(2&nbsp;recettes)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/11-Tarte-aux-pommes">
+          <img width="255" height="171" src="/images/19/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Tarte aux pommes <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+  </div>
+
+  </div>
+  <div style="height: 250px;">
+    
+
+  <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/3-Pain">Pain</a></span>
+  
+  
+  <span id="prev-recipe-carrousel-3" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
+  <span id="next-recipe-carrousel-3" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+
+  <div id="recipe-carrousel-3" class="recipe-carrousel" style="display: flex;">
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/31-Pain-brioch%C3%A9">
+          <img width="255" height="171" src="/images/64/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Pain brioché <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/32-Pain-baguette">
+          <img width="255" height="171" src="/images/60/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Pain baguette <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/35-Pain-%C3%A0-grains-entiers">
+          <img width="255" height="171" src="/images/59/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Pain à grains entiers <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/50-Pain-%C3%A0-hamburger">
+          <img width="255" height="171" src="/images/61/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Pain à hamburger <span style="font-size: 0.8em;">(1&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/34-Pain-blanc">
+          <img width="255" height="171" src="/images/21/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Pain blanc <span style="font-size: 0.8em;">(2&nbsp;recettes)</span>
+          </div>
+</a>      </div>
+  </div>
+
+  </div>
+  <div style="height: 250px;">
+    
+
+  <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/9-Trempette">Trempette</a></span>
+  
+  
+  <span id="prev-recipe-carrousel-9" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
+  <span id="next-recipe-carrousel-9" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+
+  <div id="recipe-carrousel-9" class="recipe-carrousel" style="display: flex;">
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/4-Guacamole">
+          <img width="255" height="171" src="/images/78/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Guacamole <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/1-Houmous">
+          <img width="255" height="171" src="/images/38/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Houmous <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/53-Trempette-aux-artichauts">
+          <img width="255" height="171" src="/images/54/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Trempette aux artichauts <span style="font-size: 0.8em;">(1&nbsp;recette)</span>
+          </div>
+</a>      </div>
+  </div>
+
+  </div>
+  <div style="height: 250px;">
+    
+
+  <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/15-P%C3%A2tes-alimentaires">Pâtes alimentaires</a></span>
+  
+  
+  <span id="prev-recipe-carrousel-15" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
+  <span id="next-recipe-carrousel-15" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+
+  <div id="recipe-carrousel-15" class="recipe-carrousel" style="display: flex;">
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/2-P%C3%A2tes-carbonara">
+          <img width="255" height="171" src="/images/79/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Pâtes carbonara <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/45-P%C3%A2tes-au-pesto">
+          <img width="255" height="171" src="/images/22/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Pâtes au pesto <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+  </div>
+
+  </div>
+  <div style="height: 250px;">
+    
+
+  <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/2-Muffins">Muffins</a></span>
+  
+  
+  <span id="prev-recipe-carrousel-2" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
+  <span id="next-recipe-carrousel-2" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+
+  <div id="recipe-carrousel-2" class="recipe-carrousel" style="display: flex;">
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/17-Muffins-au-chocolat">
+          <img width="255" height="171" src="/images/25/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Muffins au chocolat <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/20-Muffins-aux-bleuets">
+          <img width="255" height="171" src="/images/17/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Muffins aux bleuets <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+  </div>
+
+  </div>
+  <div style="height: 250px;">
+    
+
+  <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/14-D%C3%A9jeuner">Déjeuner</a></span>
+  
+  
+  <span id="prev-recipe-carrousel-14" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
+  <span id="next-recipe-carrousel-14" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+
+  <div id="recipe-carrousel-14" class="recipe-carrousel" style="display: flex;">
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/42-Cr%C3%AApe-mince">
+          <img width="255" height="171" src="/images/29/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Crêpe mince <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/47-Gaufres">
+          <img width="255" height="171" src="/images/37/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Gaufres <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+  </div>
+
+  </div>
+  <div style="height: 250px;">
+    
+
+  <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/4-Tofu">Tofu</a></span>
+  
+  
+  <span id="prev-recipe-carrousel-4" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
+  <span id="next-recipe-carrousel-4" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+
+  <div id="recipe-carrousel-4" class="recipe-carrousel" style="display: flex;">
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/12-Hotdog-au-tofu-pann%C3%A9">
+          <img width="255" height="171" src="/images/68/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Hotdog au tofu panné <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/56-Tofu-au-beurre">
+          <img width="255" height="171" src="/images/14/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Tofu au beurre <span style="font-size: 0.8em;">(1&nbsp;recette)</span>
+          </div>
+</a>      </div>
+  </div>
+
+  </div>
+  <div style="height: 250px;">
+    
+
+  <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/16-G%C3%A2teau">Gâteau</a></span>
+  
+  
+  <span id="prev-recipe-carrousel-16" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
+  <span id="next-recipe-carrousel-16" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+
+  <div id="recipe-carrousel-16" class="recipe-carrousel" style="display: flex;">
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/18-G%C3%A2teau-rouge-velours">
+          <img width="255" height="171" src="/images/20/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Gâteau rouge velours <span style="font-size: 0.8em;">(0&nbsp;recette)</span>
+          </div>
+</a>      </div>
+  </div>
+
+  </div>
+  <div style="height: 250px;">
+    
+
+  <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/5-P%C3%A2te">Pâte</a></span>
+  
+  
+  <span id="prev-recipe-carrousel-5" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
+  <span id="next-recipe-carrousel-5" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+
+  <div id="recipe-carrousel-5" class="recipe-carrousel" style="display: flex;">
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/28-P%C3%A2te-bris%C3%A9e">
+          <img width="255" height="171" src="/images/53/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Pâte brisée <span style="font-size: 0.8em;">(2&nbsp;recettes)</span>
+          </div>
+</a>      </div>
+  </div>
+
+  </div>
+  <div style="height: 250px;">
+    
+
+  <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/8-Pois-chiches">Pois chiches</a></span>
+  
+  
+  <span id="prev-recipe-carrousel-8" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
+  <span id="next-recipe-carrousel-8" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+
+  <div id="recipe-carrousel-8" class="recipe-carrousel" style="display: flex;">
+      <div class="recipe" style="width: 280px;">
+        <a href="/qc/cat%C3%A9gories/54-Boulettes-de-pois-chiches">
+          <img width="255" height="171" src="/images/6/small.jpg" />
+          <div style="width: 255px; text-align: center; font-family: 'Satisfy', cursive; font-size: 1.8rem; color: black; line-height: 1; margin-top: 0.25em;">
+            Boulettes de pois chiches <span style="font-size: 0.8em;">(1&nbsp;recette)</span>
+          </div>
+</a>      </div>
+  </div>
+
+  </div>
+  <div style="height: 250px;">
+    
+
+  </div>
+  <div style="height: 250px;">
+    
+
+  </div>
+  <div style="height: 250px;">
+    
+
+  </div>
+  <div style="height: 250px;">
+    
+
+  </div>
+  <div style="height: 250px;">
+    
+
+  </div>
+
+<script src="/packs/js/recipe_slider_pack_v2-998f5b3729e9f419db1d.js"></script>
+
+<!--<style>
 @media screen and (max-width: 576px) {
   .recipe-details-small {
     max-width: 300px;
@@ -51,236 +450,13 @@
 }
 </style>
 
-  <div class="row" style="margin-top: 10px;">
-  <div class="col-sm-auto">
-    <a href="/qc/recettes/1-pain_blanc">
-        <img width="255" height="171" src="/images/21/small.jpg" />
-</a>  </div>
-  <div class="col recipe-details-small">
-    <a href="/qc/recettes/1-pain_blanc">
-      <div class="recipe-listing-title">
-        Pain blanc
-      </div>
-</a>    <div>
-    <b>Ingrédients:</b>
-    <span style="color: gray;">farine, eau tiède, huile, sucre, sel, levure sèche active</span>
-</div>
-  <div>
-    <b>Préparation:</b>
-    <span style="color: gray;">5 minutes</span>
-  </div>
-  <div>
-    <b>Cuisson:</b>
-    <span style="color: gray;">26 minutes</span>
-  </div>
-  <div>
-    <b>Total:</b>
-    <span style="color: gray;">2 heures</span>
-  </div>
-
-
-  </div>
-</div>
-
-  <div class="row" style="margin-top: 10px;">
-  <div class="col-sm-auto">
-    <a href="/qc/recettes/66-pur%C3%A9e_de_courge_poivr%C3%A9e">
-        <img width="255" height="171" src="/images/2/small.jpg" />
-</a>  </div>
-  <div class="col recipe-details-small">
-    <a href="/qc/recettes/66-pur%C3%A9e_de_courge_poivr%C3%A9e">
-      <div class="recipe-listing-title">
-        Purée de courge poivrée
-      </div>
-</a>    <div>
-    <b>Ingrédients:</b>
-    <span style="color: gray;">courge poivrée, beurre, sirop d&#39;érable, gingembre moulu, sel et poivre</span>
-</div>
-  <div>
-    <b>Préparation:</b>
-    <span style="color: gray;">10 minutes</span>
-  </div>
-  <div>
-    <b>Cuisson:</b>
-    <span style="color: gray;">1 heure</span>
-  </div>
-
-
-  </div>
-</div>
-
-  <div class="row" style="margin-top: 10px;">
-  <div class="col-sm-auto">
-    <a href="/qc/recettes/141-tarte_au_sucre">
-        <img width="255" height="171" src="/images/23/small.jpg" />
-</a>  </div>
-  <div class="col recipe-details-small">
-    <a href="/qc/recettes/141-tarte_au_sucre">
-      <div class="recipe-listing-title">
-        Tarte au sucre
-      </div>
-</a>    <div>
-    <b>Ingrédients:</b>
-    <span style="color: gray;">abaisse de pâte brisée non cuite, cassonade, crème (35%), oeuf, fécule de maïs, ...</span>
-</div>
-  <div>
-    <b>Préparation:</b>
-    <span style="color: gray;">5 minutes</span>
-  </div>
-  <div>
-    <b>Cuisson:</b>
-    <span style="color: gray;">25 minutes</span>
-  </div>
-
-
-  </div>
-</div>
-
-  <div class="row" style="margin-top: 10px;">
-  <div class="col-sm-auto">
-    <a href="/qc/recettes/221-tofu_au_beurre">
-        <img width="255" height="171" src="/images/14/small.jpg" />
-</a>  </div>
-  <div class="col recipe-details-small">
-    <a href="/qc/recettes/221-tofu_au_beurre">
-      <div class="recipe-listing-title">
-        Tofu au beurre
-      </div>
-</a>    <div>
-    <b>Ingrédients:</b>
-    <span style="color: gray;">tofu, tomates en dés, eau, crème (15%), oignon, beurre, pâte de tomate, ...</span>
-</div>
-  <div>
-    <b>Préparation:</b>
-    <span style="color: gray;">20 minutes</span>
-  </div>
-  <div>
-    <b>Cuisson:</b>
-    <span style="color: gray;">30 minutes</span>
-  </div>
-
-
-  </div>
-</div>
-
-  <div class="row" style="margin-top: 10px;">
-  <div class="col-sm-auto">
-    <a href="/qc/recettes/323-biscuits_aux_brisures_de_chocolat">
-        <img width="255" height="171" src="/images/15/small.jpg" />
-</a>  </div>
-  <div class="col recipe-details-small">
-    <a href="/qc/recettes/323-biscuits_aux_brisures_de_chocolat">
-      <div class="recipe-listing-title">
-        Biscuits aux brisures de chocolat
-      </div>
-</a>    <div>
-    <b>Ingrédients:</b>
-    <span style="color: gray;">brisures de chocolat mi-sucré, farine, cassonade, beurre, sucre, oeuf, ...</span>
-</div>
-  <div>
-    <b>Préparation:</b>
-    <span style="color: gray;">20 minutes</span>
-  </div>
-  <div>
-    <b>Cuisson:</b>
-    <span style="color: gray;">13 minutes</span>
-  </div>
-
-
-  </div>
-</div>
-
-  <div class="row" style="margin-top: 10px;">
-  <div class="col-sm-auto">
-    <a href="/qc/recettes/325-boulettes_de_pois_chiches">
-        <img width="255" height="171" src="/images/6/small.jpg" />
-</a>  </div>
-  <div class="col recipe-details-small">
-    <a href="/qc/recettes/325-boulettes_de_pois_chiches">
-      <div class="recipe-listing-title">
-        Boulettes de pois chiches
-      </div>
-</a>    <div>
-    <b>Ingrédients:</b>
-    <span style="color: gray;">pois chiches secs, oeuf, chapelure assaisonnée à l&#39;italienne, huile, ...</span>
-</div>
-  <div>
-    <b>Préparation:</b>
-    <span style="color: gray;">10 minutes</span>
-  </div>
-  <div>
-    <b>Cuisson:</b>
-    <span style="color: gray;">10 minutes</span>
-  </div>
-  <div>
-    <b>Total:</b>
-    <span style="color: gray;">8 heures 20 minutes</span>
-  </div>
-
-
-  </div>
-</div>
-
-  <div class="row" style="margin-top: 10px;">
-  <div class="col-sm-auto">
-    <a href="/qc/recettes/331-p%C3%A2te_bris%C3%A9e">
-        <img width="255" height="171" src="/images/53/small.jpg" />
-</a>  </div>
-  <div class="col recipe-details-small">
-    <a href="/qc/recettes/331-p%C3%A2te_bris%C3%A9e">
-      <div class="recipe-listing-title">
-        Pâte brisée
-      </div>
-</a>    <div>
-    <b>Ingrédients:</b>
-    <span style="color: gray;">farine, beurre non salé, eau, sel</span>
-</div>
-  <div>
-    <b>Préparation:</b>
-    <span style="color: gray;">10 minutes</span>
-  </div>
-  <div>
-    <b>Cuisson:</b>
-    <span style="color: gray;">30 minutes</span>
-  </div>
-
-
-  </div>
-</div>
-
-  <div class="row" style="margin-top: 10px;">
-  <div class="col-sm-auto">
-    <a href="/qc/recettes/554-trempette_chaude_aux_artichauts">
-        <img width="255" height="171" src="/images/54/small.jpg" />
-</a>  </div>
-  <div class="col recipe-details-small">
-    <a href="/qc/recettes/554-trempette_chaude_aux_artichauts">
-      <div class="recipe-listing-title">
-        Trempette chaude aux artichauts
-      </div>
-</a>    <div>
-    <b>Ingrédients:</b>
-    <span style="color: gray;">boîte d&#39;artichauts dans l&#39;eau, fromage à la crème, fromage mozzarella râpé, ...</span>
-</div>
-  <div>
-    <b>Préparation:</b>
-    <span style="color: gray;">10 minutes</span>
-  </div>
-  <div>
-    <b>Cuisson:</b>
-    <span style="color: gray;">20 minutes</span>
-  </div>
-
-
-  </div>
-</div>
-
+-->
 
         </div>
       </div>
 
       <footer>
-        <small style="margin-left: 1rem;">&copy; Copyright 2021, Pascal Rainville</small>
+        <small style="margin-left: 1rem;">&copy; Copyright 2022, Pascal Rainville</small>
       </footer>        
     </div>
 

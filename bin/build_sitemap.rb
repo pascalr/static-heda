@@ -3,17 +3,18 @@
 entries = []
 
 #
-paths = ['qc/index.html', 'qc/recettes/']
-paths.each do |basepath|
-  if basepath[-1] == "/"
-    Dir["docs/#{basepath}**/*.*"].each do |path|
+#paths = ['qc/index.html', 'qc/recettes/']
+#paths.each do |basepath|
+#  if basepath[-1] == "/"
+    #Dir["docs/#{basepath}**/*.*"].each do |path|
+    Dir["docs/**/*.*"].each do |path|
       next if File.directory?(path)
       entries << path
     end
-  else
-    entries << "docs/#{basepath}"
-  end
-end
+#  else
+#    entries << "docs/#{basepath}"
+#  end
+#end
 
 require 'builder'
 
