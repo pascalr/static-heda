@@ -11,6 +11,7 @@ entries = []
       next if File.directory?(path)
       next if path.start_with? "docs/icons/"
       next if path.end_with? ".js"
+      next if path.end_with? ".css"
       next if path.end_with? "sitemap.xml"
       entries << path
     end
