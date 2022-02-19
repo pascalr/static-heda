@@ -4,7 +4,7 @@
     <title>HedaCuisine – Robot garde-manger</title>
     
     <meta charset="utf-8"/>
-    <link rel="stylesheet" media="all" href="/assets/application-a60cbc2173def3ff3138193d4b9bd5e9e00b87e918f51146f436f84a061b10b0.css" />
+    <link rel="stylesheet" media="all" href="/assets/application-8ea3338ad7e5f92b8342bfcb757fb58a3003ce53c91b05e23a4652f3c973519e.css" />
     <link rel="stylesheet" media="screen" href="/packs/css/autocomplete-feef600d.css" />
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -84,23 +84,21 @@ window.gon={};gon.units=[{"name":"cc","value":5.0,"is_weight":false,"is_volume":
 
 
   <div style="min-height: 100vh;">
-  <div style="display: flex; gap: 2em;">
-    <div style="font-size: 1.2rem;">
-      (<span id="page-number">1</span> de 1) recettes d'utilisateurs
-      <span id="previous-container">
-          <img style="opacity: 0.5;" src="/icons/chevron-left.svg" />
-      </span>
-      <span id="next-container">
-          <img style="opacity: 0.5;" src="/icons/chevron-right.svg" />
-      </span>
-    </div>
-    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#filter-collapse" aria-expanded="false" aria-controls="filterCollapse">Filter</button>
-  </div>
+  <span style="font-size: 1.2rem;">
+    (<span id="page-number">1</span> de 1) recettes d'utilisateurs
+    <span id="previous-container">
+        <img style="opacity: 0.5;" src="/icons/chevron-left.svg" />
+    </span>
+    <span id="next-container">
+        <img style="opacity: 0.5;" src="/icons/chevron-right.svg" />
+    </span>
+  </span>
+  <button type="button" style="margin-left: 2em;" class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#filter-collapse" aria-expanded="false" aria-controls="filterCollapse">Filter</button>
   <div class="collapse" id="filter-collapse">
   </div>
   <div style="height: 0.2em;"></div>
   <div id="current-page">
-    <div class="responsive-sm-above" style="gap: 20px;">
+    <div class="d-lg-flex gap-lg-20">
       <div>
         <div id="recipe-body-554" class="recipe-body">
 
@@ -205,8 +203,8 @@ window.gon={};gon.units=[{"name":"cc","value":5.0,"is_weight":false,"is_volume":
         </li>
     </ul>
 
-    <div style="display: flex; flex-wrap: wrap;">
-      <div style="margin-top: 4px;">
+    <div class="d-flex" style="text-align: center; margin-top: 4px;">
+      <div class="d-none d-md-block">
         <input type="text" name="quantity" id="ingredient-qty-input-field" value="1" class="form-control" style="width: 9rem; display: inline; text-align: right;" data-quantity="1" />
         <select class="form-select" id="input-ingredients" style="display: inline-block; width: auto;" name="foo[input_ingredient]"><option selected="selected" value="540">boîte d&#39;artichauts dans l&#39;eau</option>
 <option value="544">sel et poivre</option>
@@ -215,17 +213,15 @@ window.gon={};gon.units=[{"name":"cc","value":5.0,"is_weight":false,"is_volume":
 <option value="541">fromage mozzarella râpé</option>
 <option value="542">bébés épinards</option></select>
       </div>
-      <div style="display: flex; justify-content: space-between; flex-grow: 1;">
-        <div></div>
-        <div style="flex-grow: 1;"></div>
-        <img style="width: 1.5rem; margin-top: 4px;" src="/icons/right_arrow.svg" />
-        <div style="flex-grow: 1;"></div>
-        <div style="margin-top: 4px;">
-          <img style="cursor: pointer; width: 1.5rem;" id="less-servings-button" src="/icons/minus-square.svg" />
-          <input type="text" name="servings" id="servings-input-field" value="500 mL" style="width: 9rem; display: inline; text-align: right;" class="form-control" data-initial="500 mL" />
-          <img style="cursor: pointer; width: 1.5rem;" id="more-servings-button" src="/icons/plus-square.svg" />
-        </div>
+      <div style="flex-grow: 1;"></div>
+      <img class="d-none d-md-block" style="height: 2.45em; margin-right: 5px;" src="/icons/right_arrow.svg" />
+      <div style="flex-grow: 1;"></div>
+      <div style="margin-right: 5px;">
+        <img style="cursor: pointer; width: 1.5rem;" id="less-servings-button" src="/icons/minus-square.svg" />
+        <input type="text" name="servings" id="servings-input-field" value="500 mL" style="width: 9rem; display: inline; text-align: right;" class="form-control" data-initial="500 mL" />
+        <img style="cursor: pointer; width: 1.5rem;" id="more-servings-button" src="/icons/plus-square.svg" />
       </div>
+      <div style="clear: both;"></div>
     </div>
   </div>
 
@@ -294,7 +290,7 @@ window.gon={};gon.units=[{"name":"cc","value":5.0,"is_weight":false,"is_volume":
       </footer>        
     </div>
 
-    <script src="/packs/js/application-b52e58a9245bf16c97f1.js"></script>
+    <script src="/packs/js/application-b4abc4d38b7e1bfa4745.js"></script>
     <script src="/packs/js/autocomplete_search-1347f66d102b950817f2.js"></script>
 
     <script async src="//static.getclicky.com/101337754.js"></script>
