@@ -4,7 +4,7 @@
     <title>HedaCuisine - Acceuil</title>
     
     <meta charset="utf-8"/>
-    <link rel="stylesheet" media="all" href="/assets/application-8ea3338ad7e5f92b8342bfcb757fb58a3003ce53c91b05e23a4652f3c973519e.css" />
+    <link rel="stylesheet" media="all" href="/assets/application-09771f5848893f2ad9c688e05566f736bbce1a19a64983062c3a1b611645f266.css" />
     <link rel="stylesheet" media="screen" href="/packs/css/autocomplete-feef600d.css" />
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -59,14 +59,27 @@
 
 <h2>Livres en vedettes</h2>
 
-<div class="d-flex gap-20">
-    <a href="/qc/livres/8-Recettes-classiques-de-Pascal">
-          <img height="258" width="195" src="/images/99/small_book.jpg" />
 
-</a>    <a href="/qc/livres/9-Recettes-%C3%A0-Pascal-de-Pascal">
-          <img height="258" width="172" src="/images/100/small_book.jpg" />
 
-</a></div>
+
+  <div class="position-limbo" style="z-index: 10;">
+    <span id="prev-carrousel-book-1" style="left: 5px; top: 80px;" class="my-tns-control" aria-disabled='true'><img src="/icons/custom-chevron-left.svg" width="45" height="90" /></span>
+    <span id="next-carrousel-book-1" style="top: 80px; left: calc(100% - 50px);" class="my-tns-control"><img src="/icons/custom-chevron-right.svg" width="45" height="90" /></span>
+  </div>
+
+  <div id="carrousel-book-1" class="book-carrousel">
+      <div style="padding-right: 1em;">
+        <a href="/qc/livres/8-Recettes-classiques-de-Pascal">
+              <img height="258" width="195" src="/images/99/small_book.jpg" />
+
+</a>      </div>
+      <div style="">
+        <a href="/qc/livres/9-Recettes-%C3%A0-Pascal-de-Pascal">
+              <img height="258" width="172" src="/images/100/small_book.jpg" />
+
+</a>      </div>
+  </div>
+
 
 <br>
 <h2>Catégories</h2>
@@ -76,9 +89,10 @@
 
   <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/6-Biscuits">Biscuits</a></span>
   
-  
-  <span id="prev-recipe-carrousel-6" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
-  <span id="next-recipe-carrousel-6" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+  <div class="position-limbo" style="z-index: 10;">
+    <span id="prev-recipe-carrousel-6" style="left: 5px; top: 40px;" class="my-tns-control" aria-disabled='true'><img src="/icons/custom-chevron-left.svg" width="45" height="90" /></span>
+    <span id="next-recipe-carrousel-6" style="top: 40px; left: calc(100% - 50px);" class="my-tns-control"><img src="/icons/custom-chevron-right.svg" width="45" height="90" /></span>
+  </div>
 
   <div id="recipe-carrousel-6" class="recipe-carrousel d-flex gap-20">
       <div>
@@ -131,9 +145,10 @@
 
   <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/1-Tarte">Tarte</a></span>
   
-  
-  <span id="prev-recipe-carrousel-1" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
-  <span id="next-recipe-carrousel-1" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+  <div class="position-limbo" style="z-index: 10;">
+    <span id="prev-recipe-carrousel-1" style="left: 5px; top: 40px;" class="my-tns-control" aria-disabled='true'><img src="/icons/custom-chevron-left.svg" width="45" height="90" /></span>
+    <span id="next-recipe-carrousel-1" style="top: 40px; left: calc(100% - 50px);" class="my-tns-control"><img src="/icons/custom-chevron-right.svg" width="45" height="90" /></span>
+  </div>
 
   <div id="recipe-carrousel-1" class="recipe-carrousel d-flex gap-20">
       <div>
@@ -186,9 +201,10 @@
 
   <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/3-Pain">Pain</a></span>
   
-  
-  <span id="prev-recipe-carrousel-3" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
-  <span id="next-recipe-carrousel-3" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+  <div class="position-limbo" style="z-index: 10;">
+    <span id="prev-recipe-carrousel-3" style="left: 5px; top: 40px;" class="my-tns-control" aria-disabled='true'><img src="/icons/custom-chevron-left.svg" width="45" height="90" /></span>
+    <span id="next-recipe-carrousel-3" style="top: 40px; left: calc(100% - 50px);" class="my-tns-control"><img src="/icons/custom-chevron-right.svg" width="45" height="90" /></span>
+  </div>
 
   <div id="recipe-carrousel-3" class="recipe-carrousel d-flex gap-20">
       <div>
@@ -234,9 +250,10 @@
 
   <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/9-Trempette">Trempette</a></span>
   
-  
-  <span id="prev-recipe-carrousel-9" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
-  <span id="next-recipe-carrousel-9" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+  <div class="position-limbo" style="z-index: 10;">
+    <span id="prev-recipe-carrousel-9" style="left: 5px; top: 40px;" class="my-tns-control" aria-disabled='true'><img src="/icons/custom-chevron-left.svg" width="45" height="90" /></span>
+    <span id="next-recipe-carrousel-9" style="top: 40px; left: calc(100% - 50px);" class="my-tns-control"><img src="/icons/custom-chevron-right.svg" width="45" height="90" /></span>
+  </div>
 
   <div id="recipe-carrousel-9" class="recipe-carrousel d-flex gap-20">
       <div>
@@ -268,9 +285,10 @@
 
   <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/15-P%C3%A2tes-alimentaires">Pâtes alimentaires</a></span>
   
-  
-  <span id="prev-recipe-carrousel-15" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
-  <span id="next-recipe-carrousel-15" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+  <div class="position-limbo" style="z-index: 10;">
+    <span id="prev-recipe-carrousel-15" style="left: 5px; top: 40px;" class="my-tns-control" aria-disabled='true'><img src="/icons/custom-chevron-left.svg" width="45" height="90" /></span>
+    <span id="next-recipe-carrousel-15" style="top: 40px; left: calc(100% - 50px);" class="my-tns-control"><img src="/icons/custom-chevron-right.svg" width="45" height="90" /></span>
+  </div>
 
   <div id="recipe-carrousel-15" class="recipe-carrousel d-flex gap-20">
       <div>
@@ -295,9 +313,10 @@
 
   <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/2-Muffins">Muffins</a></span>
   
-  
-  <span id="prev-recipe-carrousel-2" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
-  <span id="next-recipe-carrousel-2" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+  <div class="position-limbo" style="z-index: 10;">
+    <span id="prev-recipe-carrousel-2" style="left: 5px; top: 40px;" class="my-tns-control" aria-disabled='true'><img src="/icons/custom-chevron-left.svg" width="45" height="90" /></span>
+    <span id="next-recipe-carrousel-2" style="top: 40px; left: calc(100% - 50px);" class="my-tns-control"><img src="/icons/custom-chevron-right.svg" width="45" height="90" /></span>
+  </div>
 
   <div id="recipe-carrousel-2" class="recipe-carrousel d-flex gap-20">
       <div>
@@ -322,9 +341,10 @@
 
   <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/14-D%C3%A9jeuner">Déjeuner</a></span>
   
-  
-  <span id="prev-recipe-carrousel-14" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
-  <span id="next-recipe-carrousel-14" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+  <div class="position-limbo" style="z-index: 10;">
+    <span id="prev-recipe-carrousel-14" style="left: 5px; top: 40px;" class="my-tns-control" aria-disabled='true'><img src="/icons/custom-chevron-left.svg" width="45" height="90" /></span>
+    <span id="next-recipe-carrousel-14" style="top: 40px; left: calc(100% - 50px);" class="my-tns-control"><img src="/icons/custom-chevron-right.svg" width="45" height="90" /></span>
+  </div>
 
   <div id="recipe-carrousel-14" class="recipe-carrousel d-flex gap-20">
       <div>
@@ -349,9 +369,10 @@
 
   <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/4-Tofu">Tofu</a></span>
   
-  
-  <span id="prev-recipe-carrousel-4" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
-  <span id="next-recipe-carrousel-4" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+  <div class="position-limbo" style="z-index: 10;">
+    <span id="prev-recipe-carrousel-4" style="left: 5px; top: 40px;" class="my-tns-control" aria-disabled='true'><img src="/icons/custom-chevron-left.svg" width="45" height="90" /></span>
+    <span id="next-recipe-carrousel-4" style="top: 40px; left: calc(100% - 50px);" class="my-tns-control"><img src="/icons/custom-chevron-right.svg" width="45" height="90" /></span>
+  </div>
 
   <div id="recipe-carrousel-4" class="recipe-carrousel d-flex gap-20">
       <div>
@@ -376,9 +397,10 @@
 
   <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/16-G%C3%A2teau">Gâteau</a></span>
   
-  
-  <span id="prev-recipe-carrousel-16" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
-  <span id="next-recipe-carrousel-16" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+  <div class="position-limbo" style="z-index: 10;">
+    <span id="prev-recipe-carrousel-16" style="left: 5px; top: 40px;" class="my-tns-control" aria-disabled='true'><img src="/icons/custom-chevron-left.svg" width="45" height="90" /></span>
+    <span id="next-recipe-carrousel-16" style="top: 40px; left: calc(100% - 50px);" class="my-tns-control"><img src="/icons/custom-chevron-right.svg" width="45" height="90" /></span>
+  </div>
 
   <div id="recipe-carrousel-16" class="recipe-carrousel d-flex gap-20">
       <div>
@@ -396,9 +418,10 @@
 
   <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/5-P%C3%A2te">Pâte</a></span>
   
-  
-  <span id="prev-recipe-carrousel-5" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
-  <span id="next-recipe-carrousel-5" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+  <div class="position-limbo" style="z-index: 10;">
+    <span id="prev-recipe-carrousel-5" style="left: 5px; top: 40px;" class="my-tns-control" aria-disabled='true'><img src="/icons/custom-chevron-left.svg" width="45" height="90" /></span>
+    <span id="next-recipe-carrousel-5" style="top: 40px; left: calc(100% - 50px);" class="my-tns-control"><img src="/icons/custom-chevron-right.svg" width="45" height="90" /></span>
+  </div>
 
   <div id="recipe-carrousel-5" class="recipe-carrousel d-flex gap-20">
       <div>
@@ -416,9 +439,10 @@
 
   <span style="font-size: 1.4rem; font-weight: bold;"><a style="color: black;" href="/qc/groupes/8-Pois-chiches">Pois chiches</a></span>
   
-  
-  <span id="prev-recipe-carrousel-8" class="my-tns-control"><img src="/icons/left_arrow.svg" width="15" height="15" /></span>
-  <span id="next-recipe-carrousel-8" class="my-tns-control"><img src="/icons/right_arrow.svg" width="15" height="15" /></span>
+  <div class="position-limbo" style="z-index: 10;">
+    <span id="prev-recipe-carrousel-8" style="left: 5px; top: 40px;" class="my-tns-control" aria-disabled='true'><img src="/icons/custom-chevron-left.svg" width="45" height="90" /></span>
+    <span id="next-recipe-carrousel-8" style="top: 40px; left: calc(100% - 50px);" class="my-tns-control"><img src="/icons/custom-chevron-right.svg" width="45" height="90" /></span>
+  </div>
 
   <div id="recipe-carrousel-8" class="recipe-carrousel d-flex gap-20">
       <div>
@@ -452,7 +476,8 @@
 
   </div>
 
-<script src="/packs/js/recipe_slider_pack_v2-5de099a65155db1f504d.js"></script>
+<script src="/packs/js/recipe_slider_pack_v2-9e6e612e293e673b2af4.js"></script>
+<script src="/packs/js/book_carrousel-8bb253aa60b6c7b86d0d.js"></script>
 
         </div>
       </div>
@@ -462,8 +487,8 @@
       </footer>        
     </div>
 
-    <script src="/packs/js/application-b4abc4d38b7e1bfa4745.js"></script>
-    <script src="/packs/js/autocomplete_search-1347f66d102b950817f2.js"></script>
+    <script src="/packs/js/application-2f5118afcb7cc2cfc2ea.js"></script>
+    <script src="/packs/js/autocomplete_search-9093c10013247426ca3b.js"></script>
 
     <script async src="//static.getclicky.com/101337754.js"></script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101337754ns.gif" /></p></noscript>
